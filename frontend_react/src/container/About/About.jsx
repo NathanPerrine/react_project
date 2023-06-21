@@ -2,16 +2,8 @@ import React, { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 
 import { AppWrap } from '../../wrapper'
-import { images } from '../../constants'
 import './About.scss'
 import { urlFor, client } from '../../client'
-
-// const abouts = [
-//   {title: 'Web Development', description: 'Description to be updated...', imgUrl: images.about01},
-//   {title: 'Frontend Development', description: 'Description to be updated...', imgUrl: images.about02},
-//   {title: 'Backend Development', description: 'Description to be updated...', imgUrl: images.about03},
-//   // {title: 'Web Animations', description: 'Description to be updated...', imgUrl: images.about04}
-// ]
 
 const About = () => {
   const [abouts, setAbouts] = useState([]);
