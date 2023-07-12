@@ -58,7 +58,7 @@ const Skills = () => {
               <div className='app__skills-exp-year'>
                 <p className='bold-text'>{ exp.year }</p>
               </div>
-              <motion.div>
+              <motion.div className='app__skills-exp-works'>
                 {exp.works.map((work) => (
                   <>
                     <motion.div
@@ -74,8 +74,9 @@ const Skills = () => {
                     <Tooltip
                       id={ work.name }
                       effect='solid'
-                      arrowColor='#fff'
                       className='skills-tooltip'
+                      classNameArrow='skills-tooltip-arrow'
+                      place='bottom-start'
                     >
                       { work.desc }
                     </Tooltip>
@@ -93,4 +94,4 @@ const Skills = () => {
   )
 }
 
-export default Skills
+export default AppWrap(Skills, 'skills')
