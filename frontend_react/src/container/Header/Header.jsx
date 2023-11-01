@@ -28,7 +28,7 @@ const Header = () => (
           <span>👋</span>
           <div style={{ marginLeft: 20 }}>
             <p className="p-text">Hello, I am</p>
-            <h1 className="head-text">Micael</h1>
+            <h1 className="head-text">Nathan</h1>
           </div>
         </div>
 
@@ -68,5 +68,5 @@ const Header = () => (
   </div>
 );
 
-export default AppWrap(Header, 'home', 'app__header app__flex');
+export default AppWrap(Header, 'home', 'app__header app__flex app__primarybg');
 // export default Header;
