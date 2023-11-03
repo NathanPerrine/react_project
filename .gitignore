@@ -41,8 +41,5 @@
 # Dotenv and similar local-only files
 **/*.local
 
-# Todo
-todo.md
-
 # .env
 **/.env
